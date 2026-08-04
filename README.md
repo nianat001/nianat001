@@ -1,3 +1,28 @@
+# Luminary Companions
+
+A dependency-free, mobile-first companion app for guided practices, reflective journaling, and supportive conversations.
+
+## Test it locally
+
+You only need Node.js 18 or newer—there is no install step and no package download.
+
+```bash
+npm run dev
+```
+
+Then open **http://localhost:4173** in your browser. To test the mobile layout, open your browser's developer tools and select a phone-sized viewport.
+
+To verify the production output:
+
+```bash
+npm run build
+npm run preview
+```
+
+The build is written to `dist/`. Practice progress and journal entries are stored locally in your browser.
+
+---
+
 # 👩🏽‍💻 Adediwura Oluwaseun – Cybersecurity Analyst
 
 Hi there! 👋 I'm *Adediwura Oluwaseun*, a passionate and hands-on **Cybersecurity Analyst** with a growing portfolio of real-world projects focused on threat detection, system hardening, and security monitoring. I believe in learning by doing, and I’m on a mission to make the digital world safer — one packet at a time.
