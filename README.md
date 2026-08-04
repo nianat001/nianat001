@@ -1,3 +1,65 @@
+# Luminary Companions
+
+A dependency-free, mobile-first companion app for guided practices, reflective journaling, and supportive conversations.
+
+## Test it locally
+
+You only need Node.js 18 or newer—there is no install step and no package download.
+
+1. Open a terminal in this repository.
+2. Start the app (do **not** close the terminal afterward):
+
+   ```bash
+   npm start
+   ```
+
+3. Wait until the terminal says `Luminary is running`, then open **http://localhost:4173** in the browser on the **same computer**. `localhost` only works while this command is running.
+
+If port 4173 is occupied, choose another port:
+
+```bash
+PORT=4174 npm start
+```
+
+Then visit **http://localhost:4174**. To test the mobile layout, open your browser's developer tools and select a phone-sized viewport.
+
+### No-server option
+
+You can also double-click `index.html` and use the app directly from your filesystem. The assets use relative URLs and the app has no external runtime dependencies.
+
+To verify the production output:
+
+```bash
+npm run build
+npm run preview
+```
+
+The build is written to `dist/`. Practice progress and journal entries are stored locally in your browser.
+
+## Launch it yourself with GitHub Pages
+
+You do not need to hand this project to another developer. This repository includes an automatic deployment workflow.
+
+1. Push this repository to GitHub.
+2. On the repository page, open **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Open **Actions → Deploy Luminary to GitHub Pages → Run workflow** and run it from `main` or `work`.
+5. When the workflow finishes, open the URL shown in its **Deploy site** result. It will normally look like `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`.
+
+Every later push to `main` or `work` automatically rebuilds and publishes the site. You can also connect a domain you own from **Settings → Pages → Custom domain**.
+
+### What this launch includes
+
+- A public install-free website that works on phones and desktops.
+- Companion search, guided-practice tracking, journaling, and the current scripted chat experience.
+- Private browser storage: journal entries and completed practices remain on that user's device and are not sent to a server.
+
+### Before inviting real users
+
+This is a functional prototype, not yet a production mental-health service. The companion replies are scripted and there are no user accounts, cloud backups, moderation tools, analytics, emergency resources, or AI service connected. Before marketing it broadly, add a privacy policy, terms, support contact, crisis disclaimer/resources, accessibility review, and a real secure backend if accounts or AI conversations are required.
+
+---
+
 # 👩🏽‍💻 Adediwura Oluwaseun – Cybersecurity Analyst
 
 Hi there! 👋 I'm *Adediwura Oluwaseun*, a passionate and hands-on **Cybersecurity Analyst** with a growing portfolio of real-world projects focused on threat detection, system hardening, and security monitoring. I believe in learning by doing, and I’m on a mission to make the digital world safer — one packet at a time.
