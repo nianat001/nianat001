@@ -36,6 +36,28 @@ npm run preview
 
 The build is written to `dist/`. Practice progress and journal entries are stored locally in your browser.
 
+## Launch it yourself with GitHub Pages
+
+You do not need to hand this project to another developer. This repository includes an automatic deployment workflow.
+
+1. Push this repository to GitHub.
+2. On the repository page, open **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Open **Actions → Deploy Luminary to GitHub Pages → Run workflow** and run it from `main` or `work`.
+5. When the workflow finishes, open the URL shown in its **Deploy site** result. It will normally look like `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`.
+
+Every later push to `main` or `work` automatically rebuilds and publishes the site. You can also connect a domain you own from **Settings → Pages → Custom domain**.
+
+### What this launch includes
+
+- A public install-free website that works on phones and desktops.
+- Companion search, guided-practice tracking, journaling, and the current scripted chat experience.
+- Private browser storage: journal entries and completed practices remain on that user's device and are not sent to a server.
+
+### Before inviting real users
+
+This is a functional prototype, not yet a production mental-health service. The companion replies are scripted and there are no user accounts, cloud backups, moderation tools, analytics, emergency resources, or AI service connected. Before marketing it broadly, add a privacy policy, terms, support contact, crisis disclaimer/resources, accessibility review, and a real secure backend if accounts or AI conversations are required.
+
 ---
 
 # 👩🏽‍💻 Adediwura Oluwaseun – Cybersecurity Analyst
