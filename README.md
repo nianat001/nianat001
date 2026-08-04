@@ -55,6 +55,9 @@ The deployment uses the Node.js 24-compatible major versions of GitHub's officia
 - A public install-free website that works on phones and desktops.
 - Companion search, guided-practice tracking, journaling, and the current scripted chat experience.
 - Private browser storage: journal entries and completed practices remain on that user's device and are not sent to a server.
+- Manchester and Greater Manchester service information, transparent pricing, a booking enquiry form, WhatsApp sharing, callback requests, and an on-site privacy notice.
+
+Business enquiries are sent to **adediwuraoluwaseun@gmail.com**. The WhatsApp button currently opens WhatsApp with a prepared message so the visitor can choose a recipient. To make Call and WhatsApp dial one specific business number, add that verified number to the `business` settings near the top of `src/main.js`; no phone number is invented or published by this project.
 
 ### Before inviting real users
 
