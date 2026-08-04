@@ -6,11 +6,26 @@ A dependency-free, mobile-first companion app for guided practices, reflective j
 
 You only need Node.js 18 or newer—there is no install step and no package download.
 
+1. Open a terminal in this repository.
+2. Start the app (do **not** close the terminal afterward):
+
+   ```bash
+   npm start
+   ```
+
+3. Wait until the terminal says `Luminary is running`, then open **http://localhost:4173** in the browser on the **same computer**. `localhost` only works while this command is running.
+
+If port 4173 is occupied, choose another port:
+
 ```bash
-npm run dev
+PORT=4174 npm start
 ```
 
-Then open **http://localhost:4173** in your browser. To test the mobile layout, open your browser's developer tools and select a phone-sized viewport.
+Then visit **http://localhost:4174**. To test the mobile layout, open your browser's developer tools and select a phone-sized viewport.
+
+### No-server option
+
+You can also double-click `index.html` and use the app directly from your filesystem. The assets use relative URLs and the app has no external runtime dependencies.
 
 To verify the production output:
 
