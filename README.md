@@ -52,7 +52,18 @@ Every later push to `main` or `work` automatically rebuilds and publishes the si
 
 - A public install-free website that works on phones and desktops.
 - Companion search, guided-practice tracking, journaling, and the current scripted chat experience.
+- A **Leads** tab for finding cold-outreach targets: enter a location and radius, and it returns nearby organisations — GP surgeries, community/social care groups, care homes, solicitors, financial advisers, local employers, pharmacies, places of worship, and libraries — ranked by a fit score (channel relevance, distance, and contact-info completeness). Results can be exported to CSV.
 - Private browser storage: journal entries and completed practices remain on that user's device and are not sent to a server.
+
+### How the Leads finder works
+
+Everything runs client-side, directly from the visitor's browser — there is no backend and no data collection:
+
+1. The location text is geocoded with the free [Nominatim](https://nominatim.openstreetmap.org/) API (OpenStreetMap).
+2. Nearby organisations are queried from the [Overpass API](https://overpass-api.de/) (OpenStreetMap) within the chosen radius.
+3. Results are deduplicated, scored, and ranked in the browser; nothing is sent to or stored on a server.
+
+Because it depends on OpenStreetMap's public data and free APIs, coverage and contact-detail completeness vary by area, and heavy or rapid-fire searching may be rate-limited — it's meant for occasional prospecting, not bulk scraping.
 
 ### Before inviting real users
 
